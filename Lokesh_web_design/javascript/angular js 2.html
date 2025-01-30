@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+</script>
+</head>
+<body ng-app>
+
+<p ng-init="first='Lokesh';last='Yadav';">
+My name is:={{first+"   "+last}}
+</p>
+
+<div ng-init="a={first:'lokesh',second:'sumit',third:'Mr.Sanjit kumar'}">
+brother name:={{a.second}}<br>
+Father's name:={{a.third}}
+
+
+<p ng-init="ab=[25,6,4,9,7,0]">
+third no.:={{ab[3]}}
+</body>
+</html>

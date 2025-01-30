@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+function fun()
+{
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+var email=document.myform.email.value;
+if(name==null||name=="")
+{
+alert("name not be blank");
+return false;
+}
+else if(password==null||password=="");
+{
+alert("password not be blank");
+return false;
+}
+else if(email==null||email=="");
+{
+alert("email not be filled out");
+return false;
+}
+document.write("form submitted");
+}
+
+</script>
+</head>
+<body>
+<h1>form validation</h1>
+<form method="post" name="myform" onsubmit="fun()">
+name:<input type="name" name="name"><br>
+password:<input type="password" name="password"><br>
+email:<input type="email" name="email"><br>
+<input type="submit"value="submit">
+</form>
+</body>
+</html>
